@@ -7,6 +7,8 @@ WORKDIR /app
 # Copy the app files to the container
 COPY . /app
 
+RUN pip install scikit-learn
+
 # Install Python libraries
 RUN pip install --no-cache-dir -r requirements.txt
 
